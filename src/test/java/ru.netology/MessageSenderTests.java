@@ -8,6 +8,7 @@ import ru.netology.sender.MessageSenderImpl;
 public class MessageSenderTests {
     @Test
     void MessageSenderImplWithMockito(){
+        GeoServiceMock geoServiceMock = new GeoServiceMock();
         GeoService geoService = Mockito.mock(GeoService.class);
 //        Mockito.when(geoService.byIp())
     }
