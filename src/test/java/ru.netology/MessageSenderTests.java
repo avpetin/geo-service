@@ -26,7 +26,7 @@ public class MessageSenderTests {
                 .thenReturn("Welcome");
 
         MessageSender messageSender = new MessageSenderImpl(geoServiceMock, preferenceLocalization);
-        Map<String, String> headers = new HashMap<String, String>();
+        Map<String, String> headers = new HashMap<>();
         headers.put("x-real-ip", "96.44.183.149");
         String returned = messageSender.send(headers);
         String expected = "Welcome";
